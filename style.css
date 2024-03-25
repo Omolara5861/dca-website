@@ -26,6 +26,7 @@ body {
   line-height: 24px;
   color: #fff;
   padding: 8px 24px;
+  width: 216px;
 }
 
 .btn:hover {
@@ -187,10 +188,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #E9F2FF !important;
+  position: relative;
+  z-index: 2 ;
 }
 
 .page-header h1 {
-  color: #fff;
+  color: #05274C;
   font-size: 48px;
   font-weight: 700;
   line-height: 72px;
@@ -216,24 +220,25 @@ body {
 .gap-10 {
   gap: 6rem;
 }
+
 .container h2 {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 54px;
-    color: #1a1a1a;
-  }
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  color: #1a1a1a;
+}
 
 .container .lead {
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 30px;
-  }
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
 
-  .course-d p {
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 27px;
-  }
+.course-d p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
 
 .course-details .container .elipse {
   position: absolute;
@@ -375,6 +380,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .course-d .box__section .box__title {
   font-size: 18px;
   font-weight: 700;
@@ -386,6 +392,7 @@ body {
 .course-d .benefits {
   position: relative;
 }
+
 .course-d .detail-plus {
   position: absolute;
   top: 0;
@@ -410,9 +417,9 @@ td {
 
 th {
   color: #1a1a1a;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 27px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
 }
 
 td {
@@ -422,11 +429,11 @@ td {
   color: #363636;
 }
 
-.learning__objective .box__title p{
-    color: #1a1a1a;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 27px;
+.learning__objective .box__title p {
+  color: #1a1a1a;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
 }
 
 #tech-session {
@@ -680,20 +687,6 @@ td {
 
 #hero2 h3 {
   font-weight: lighter;
-}
-
-.privacy .content {
-  padding-left: 4em;
-}
-
-.privacy .list-item {
-  font-size: 12px;
-  margin-left: 3px;
-}
-
-.privacy .list-item a {
-  text-decoration: none;
-  margin-left: 3px;
 }
 
 #hero3 {
@@ -1094,4 +1087,106 @@ td {
 
 .swiper-pagination-bullet-active {
   background-color: var(--second-color);
+}
+
+.privacy .content h6 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.privacy .content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.privacy .content .font-bold {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #1a1a1a;
+}
+
+.privacy ol li {
+  margin: 12px 0;
+}
+
+.privacy ol li a {
+  font-size: 16px !important;
+  font-weight: 600;
+  line-height: 24px;
+  color: #abacb1;
+  text-decoration: none;
+}
+
+.privacy ol li.active,
+.privacy ol li a.active {
+  color: #05274C !important;
+}
+
+.page-header .elipse1 {
+  position: absolute;
+  top: 90px;
+  left: 46%;
+}
+
+.page-header .elipse2 {
+  position: absolute;
+  bottom: -45px;
+  left: 40px;
+}
+.page-header .elipse3 {
+  position: absolute;
+  bottom: -50px;
+  left: 40px;
+  width: 150px;
+  height: 50px;
+  background: white;
+  z-index: 8;
+}
+.page-header .ripple {
+  position: absolute;
+  right: 0;
+}
+
+.contact {
+    padding: 46px 48px;
+    border-radius: 16px;
+  background: #fff;
+  border: 1px solid #EEEEEF;
+  box-shadow: 0px 5px 20px 0px #0000001A;
+}
+
+.contact label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #363636;
+    margin-bottom: 7px;
+}
+
+form input, form select {
+  background: #F5F5F5;
+  border-radius: 8px;
+  height: 56px;
+}
+
+form button {
+  width: 216px;
+  margin-top: 38px;
+}
+
+.text-muted {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #67676a !important;
+}
+
+.contactus .font-bold {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #05274c;
 }
