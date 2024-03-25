@@ -317,6 +317,8 @@ body {
   position: relative;
 }
 
+.course .btn {width: unset !important;}
+
 #courses .course-info .text h5 {
   font-size: 16px;
   font-weight: 700;
