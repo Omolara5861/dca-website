@@ -40,12 +40,12 @@
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Courses
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="agile.html">Agile Project Manger</a></li>
-                <li><a class="dropdown-item" href="business-analysis.html">Business Analysis</a></li>
-                <li><a class="dropdown-item" href="scrum-master.html">Scrum Master</a></li>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="course-details.html">Agile Project Manger</a></li>
+                <li><a class="dropdown-item" href="course-details.html">Business Analysis</a></li>
+                <li><a class="dropdown-item" href="course-details.html">Scrum Master</a></li>
                 <li><a class="dropdown-item" href="work-experience.html">Work Experience</a></li>
-                <li><a class="dropdown-item" href="product-management.html">Product Management</a></li>
+                <li><a class="dropdown-item" href="course-details.html">Product Management</a></li>
                 <li><a class="dropdown-item" href="courses.html">View All</a></li>
               </ul>
             </li>
@@ -81,7 +81,8 @@
             <div class="border-left">
             </div>
             <li class="nav-item">
-              <a class=" nav-link mx-2" href="#">Login</a>
+              
+<a class=" nav-link mx-2" href="https://lms.digitalcareers.academy/sign-in/?next=/" target="_blank">Login</a>
             </li>
             <li class="nav-item">
               <a class=" mx-2 btn btn-trans" data-bs-toggle="modal" data-bs-target="#myModal">Free tech
@@ -103,10 +104,26 @@
           <!-- Modal body -->
           <div class="modal-body">
             <div class="mb-3">
-              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              <input type="text" name="fullname" class="form-control" id="inputEmail" placeholder="Full name">
             </div>
             <div class="mb-3">
-              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              <input type="email" name="email" class="form-control" id="inputPassword" placeholder="Email address">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="inputPassword" placeholder="Phone number">
+            </div>
+            <div class="mb-3">
+              <select name="course" id="course" class="form-control">
+                <option value="program">Select program</option>
+                <option value="agile-project-manager">Agile Project Manger</option>
+                <option value="business-analysis">Business Analysis</option>
+                <option value="scrum-master">Scrum Master</option>
+                <option value="work-experience">Work Experience</option>
+                <option value="product-management">Product Management</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <textarea name="message" class="form-control">Tell us what you're looking for</textarea>
             </div>
           </div>
           <!-- Modal footer -->
@@ -124,8 +141,8 @@
             <p>Digital Careers Academy is the online learning platform
               that offers various courses for your development.</p>
             <div class="tns-container d-flex gap-4">
-              <button class="btn"> Register Now</button>
-              <button class="btn btn-trans"> Free Tech Session</button>
+              <a href="courses.html" class="btn"> Register Now</a>
+              <button class="btn btn-trans" data-bs-toggle="modal" data-bs-target="#myModal"> Free Tech Session</button>
             </div>
           </div>
           <img src="images/hero.png" alt="Group of people sitting" class="col-lg-6">
@@ -168,7 +185,7 @@
                 teams working together remotely
                 across the to create digital
                 products in a fast-paced</p>
-              <button class="btn">Learn more</button>
+              <a href="about.html" class="btn">Learn more</a>
             </div>
           </div>
           <div class="box col-lg-4">
@@ -192,7 +209,6 @@
               <img src="images/fees.png" alt="Fees">
               <h4>Affordable Fees</h4>
             </div>
-            <button class="btn">Learn more</button>
           </div>
         </div>
       </div>
@@ -379,7 +395,7 @@
               taster session.
               Have questions or need more information? Click <a href="contact.html"
                 class="text-decoration-none">support</a> to get in touch.</p>
-            <button class="btn mt-3">Register Now</button>
+            <button class="btn mt-3" data-bs-toggle="modal" data-bs-target="#myModal">Register Now</button>
           </div>
           <img src="images/session.png" alt=" Meeting" class="col-lg-5">
         </div>
@@ -428,8 +444,8 @@
                   a course. <strong> Subject to full payment of course.</strong></p>
               </div>
             </div>
-            <btn class="btn btn-trans">Learn more</btn>
-            <button class="btn mx-3">Refer Now</button>
+            <a href="refer.html" class="btn btn-trans">Learn more</a>
+            <!-- <button class="btn mx-3">Refer Now</button> -->
           </div>
         </div>
       </div>
@@ -604,6 +620,7 @@
   </footer>
   <!--=============== SWIPER JS ===============-->
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

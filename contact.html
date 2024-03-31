@@ -39,25 +39,13 @@
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Courses
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li>
-                  <a class="dropdown-item" href="agile.html">Agile Project Manger</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="business-analysis.html">Business Analysis</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="scrum-master.html">Scrum Master</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="work-experience.html">Work Experience</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="product-management.html">Product Management</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="courses.html">View All</a>
-                </li>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="course-details.html">Agile Project Manger</a></li>
+                <li><a class="dropdown-item" href="course-details.html">Business Analysis</a></li>
+                <li><a class="dropdown-item" href="course-details.html">Scrum Master</a></li>
+                <li><a class="dropdown-item" href="work-experience.html">Work Experience</a></li>
+                <li><a class="dropdown-item" href="course-details.html">Product Management</a></li>
+                <li><a class="dropdown-item" href="courses.html">View All</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -101,28 +89,42 @@
       </div>
     </nav>
     <!-- The Modal -->
-    <div class="modal" id="myModal">
+     <div class="modal" id="myModal">
       <div class="modal-dialog">
         <div class="modal-content">
           <!-- Modal Header -->
           <div class="modal-header">
             <h4 class="modal-title">Free Tech Sessions Form</h4>
-            <img src="../images/times.png" alt="Close Btn" data-bs-dismiss="modal" />
+            <img src="images/times.png" alt="Close Btn" data-bs-dismiss="modal" />
           </div>
           <!-- Modal body -->
           <div class="modal-body">
             <div class="mb-3">
-              <input type="email" class="form-control" id="inputEmail" placeholder="Email" />
+              <input type="text" name="fullname" class="form-control" id="inputEmail" placeholder="Full name">
             </div>
             <div class="mb-3">
-              <input type="password" class="form-control" id="inputPassword" placeholder="Password" />
+              <input type="email" name="email" class="form-control" id="inputPassword" placeholder="Email address">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="inputPassword" placeholder="Phone number">
+            </div>
+            <div class="mb-3">
+              <select name="course" id="course" class="form-control">
+                <option value="program">Select program</option>
+                <option value="agile-project-manager">Agile Project Manger</option>
+                <option value="business-analysis">Business Analysis</option>
+                <option value="scrum-master">Scrum Master</option>
+                <option value="work-experience">Work Experience</option>
+                <option value="product-management">Product Management</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <textarea name="message" class="form-control">Tell us what you're looking for</textarea>
             </div>
           </div>
           <!-- Modal footer -->
           <div class="modal-footer text-center w-100">
-            <button type="button" class="btn" data-bs-dismiss="modal">
-              Submit Request
-            </button>
+            <button type="button" class="btn" data-bs-dismiss="modal">Submit Request</button>
           </div>
         </div>
       </div>
@@ -181,12 +183,11 @@
               </div>
 
             </div>
-
           </div>
           <h6 class="font-bold mt-5 contact-texts">Social Media:</h6>
           <div class="social-icons d-flex gap-3">
             <div class="icon-container px-2 py-1">
-              <a href="#" target="_blank">
+              <a href="https://www.facebook.com/digitalcareersacademyDCA" target="_blank">
                 <i class="bi bi-facebook text-light"></i>
               </a>
             </div>
@@ -196,12 +197,12 @@
               </a>
             </div>
             <div class="icon-container px-2 py-1">
-              <a href="#" target="_blank">
+              <a href="https://www.linkedin.com/company/digitalcareersacademydca" target="_blank">
                 <i class="bi bi-linkedin text-light"></i>
               </a>
             </div>
             <div class="icon-container px-2 py-1">
-              <a href="#" target="_blank">
+              <a href="https://www.instagram.com/digitalcareersacademy/" target="_blank">
                 <i class="bi bi-instagram text-light"></i> </a>
             </div>
           </div>
@@ -252,10 +253,11 @@
       </form>
     </section>
   </main>
-  <footer id="footer" class="py-5">
+
+   <footer id="footer" class="py-5">
     <div class="container">
       <section class="row mb-8">
-        <div class="col-md-3">
+        <div class="col-lg-3">
           <div class="mb-3">
             <img src="images/logo.png" alt="Logo" /> <br />
             <small>Equipping with digital skills</small>
@@ -267,7 +269,7 @@
             Ballybrit Galway, H91 E65V, Ireland
           </address>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3">
           <h5>Program Track</h5>
           <ul class="navbar-nav ms-auto ">
             <li class="nav-item">
@@ -281,7 +283,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3">
           <h5>Resources</h5>
           <ul class="navbar-nav ms-auto ">
             <li class="nav-item">
@@ -298,7 +300,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3">
           <h5>Get In Touch</h5>
           <ul class="navbar-nav ms-auto ">
             <li class="nav-item">
@@ -313,13 +315,21 @@
           </ul>
         </div>
       </section>
-      <section class="border-tb justify-content-between">
+      <section class="border-tb d-flex justify-content-between">
         <span class="align-self-center">© 2024 Digital Careers Academy</span>
         <div class="social-icon">
-          <img src="images/facebook.png" alt="Facebook Icon">
-          <img src="images/twitter.png" alt="Twitter Icon">
-          <img src="images/linkedin.png" alt="LinkedIn Icon">
-          <img src="images/instagram.png" alt="Instagram Icon">
+          <a href="https://www.facebook.com/digitalcareersacademyDCA">
+            <img src="images/facebook.png" alt="Facebook Icon">
+          </a>
+          <a href="https://img.icons8.com/?size=1x&id=63306&format=png">
+            <img src="images/twitter.png" alt="Twitter Icon">
+          </a>
+          <a href="https://www.linkedin.com/company/digitalcareersacademydca">
+            <img src="images/linkedin.png" alt="LinkedIn Icon">
+          </a>
+          <a href="https://www.instagram.com/digitalcareersacademy/">
+            <img src="images/instagram.png" alt="Instagram Icon">
+          </a>
         </div>
       </section>
     </div>

@@ -18,6 +18,54 @@ body {
   box-sizing: border-box;
 }
 
+
+
+.course-d .accordion {
+  padding: 24px 46px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 1px 5px 0px #0000001A;
+  margin-top: 56px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.course-d .accordion-item {
+  border: none;
+}
+
+.course-d .line {
+  height: 1px;
+  background: #CDCDD0;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.course-d .accordion-button:focus {
+  border-color: unset;
+  box-shadow: unset;
+}
+
+.course-d .accordion-button:not(.collapsed) {
+  background-color: unset;
+  box-shadow: unset;
+}
+
+.course-d .accordion-button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #363636;
+}
+
+.course-d .accordion-button::after {
+  color: #363636;
+}
+
+.modal-header img {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
@@ -74,6 +122,30 @@ nav {
 
 .title p {
   margin: 16px;
+}
+
+.details-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.text {
+  font-size: 14px;
+  color: #333;
 }
 
 #navbar .btn,
@@ -195,10 +267,10 @@ nav {
   box-shadow: unset;
 }
 
-/* section {
-  max-width: 1440px;
-  margin: 0 auto;
-} */
+#myModal textarea {
+  height: 113px;
+  resize: none;
+}
 
 .page-header {
   height: 320px;
@@ -1076,6 +1148,98 @@ td {
   right: 0;
 }
 
+.learning__objective,
+.course-schedule {
+  background: #F9FDFF;
+}
+
+.course-schedule .schedule-plus {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+#pricing {
+  position: relative;
+  background: #052345;
+  color: #fff;
+  padding: 100px 0;
+  height: 90vh;
+}
+
+#pricing h2 {
+  color: #fff;
+}
+
+.payment-options {
+  background: #fff;
+  width: 80%;
+  margin: 0 auto;
+  padding: 48px 80px;
+  gap: 48px;
+  border-radius: 16px;
+}
+
+.btn-container button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  background: #fff;
+  color: #363636;
+  height: 40px;
+  padding: 8px 32px;
+  border-radius: 8px;
+  border: 1px;
+  cursor: pointer;
+}
+
+.btn-container button.active {
+  background: #05274C;
+  color: #fff;
+}
+
+.btn-container {
+  background: #F5F5F5;
+  padding: 8px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.payment-plan h3 {
+  color: #67676a;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+
+.payment-plan p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #2762BF;
+}
+
+.payment-plan .price {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  color: #27272a;
+}
+
+.payment-plan {
+  display: none;
+  border: 1px solid #E6EEFC;
+  box-shadow: 0px 4px 38px 0px #0053D00D;
+  padding: 48px 0;
+  text-align: center;
+}
+
+.payment-plan.active {
+  display: block;
+}
+
 .contact {
   padding: 46px 48px;
   border-radius: 16px;
@@ -1164,6 +1328,11 @@ form button {
   color: #2762BF;
 }
 
+.payment-page,
+.refer-earn {
+  position: unset !important;
+}
+
 /* MEDIA QUERIES FOR MOBILE & TABLETS */
 
 @media (max-width: 1000.98px) {
@@ -1249,6 +1418,29 @@ form button {
   .social-icons {
     width: 60%;
   }
+}
+
+#pricing .container {
+  position: relative;
+}
+
+#pricing .ellipse {
+  position: absolute;
+  top: -25px;
+  left: 0;
+}
+
+#pricing .ellipse2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+#pricing .patterns {
+  position: absolute;
+  top: 50%;
+  left: 95px;
 }
 
 @media (max-width: 768.98px) {
@@ -1389,9 +1581,16 @@ form button {
   .refer-earn .d-flex {
     flex-direction: unset !important;
   }
- .mx-3 {
+
+  .mx-3 {
     margin-right: unset !important;
     margin-left: unset !important;
     margin-top: 15px;
+  }
+
+  .lead {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
   }
 }
