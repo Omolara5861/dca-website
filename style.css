@@ -18,7 +18,29 @@ body {
   box-sizing: border-box;
 }
 
+.course-d .details-card {
+  padding: 24px 24px 40px 24px;
+  border-radius: 16px;
+  border: 1px solid #EEEEEF;
+  box-shadow: 0px 2px 10px 0px #0000000D;
+}
 
+.course-d .details-card .icon {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.course-d .details-card .icon .name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #363636;
+}
+
+.course-d .details-card .icon:last-child {
+  margin-bottom: unset;
+}
 
 .course-d .accordion {
   padding: 24px 46px;
@@ -96,9 +118,15 @@ nav {
   width: 216px;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  width: unset;
+  position: unset;
+}
+
 .btn:hover {
   border: 1px solid #3375d9;
-  color: #2762bf;
+  color: #2762bf !important;
   background: transparent !important;
 }
 
@@ -122,30 +150,6 @@ nav {
 
 .title p {
   margin: 16px;
-}
-
-.details-card {
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 300px;
-}
-
-.icon {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.icon img {
-  width: 24px;
-  margin-right: 10px;
-}
-
-.text {
-  font-size: 14px;
-  color: #333;
 }
 
 #navbar .btn,
@@ -401,6 +405,13 @@ nav {
   margin-bottom: 48px;
 }
 
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 52px;
+  margin-top: 4rem;
+}
+
 .course {
   padding: unset;
   border-radius: 16px;
@@ -486,6 +497,20 @@ nav {
 
 .course-d .benefits {
   position: relative;
+}
+
+.course-d .benefits .box__section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 52px;
+  margin-top: 4rem;
+}
+.course-d .benefits .box__section .box .box__title p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #363636;
+  margin-top: 32px;
 }
 
 .course-d .detail-plus {
@@ -603,27 +628,29 @@ td {
 
 #testimonial .pattern1 {
   position: absolute;
-  left: 95px;
-  top: 90px;
+  left: 65px;
+  top: 110px;
 }
 
 #testimonial .pattern2 {
   position: absolute;
-  right: 85px;
+  right: 70px;
   bottom: 0px;
 }
 
-.pattern1,
-.pattern2 {
-  z-index: -1 !important;
+
+#testimonial .testimonials {
+  border-radius: 48px 0 48px 0;
 }
 
 #testimonial .testimonial {
   background: white;
   padding: 70px 48px;
   gap: 48px;
-  border-radius: 48px 0px 48px 0px;
+  border-radius: 48px 0 48px 0;
   box-shadow: 0px 25px 50px -12px #0053D00D;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #testimonial .testimonial h3 {
@@ -1068,12 +1095,15 @@ td {
 }
 
 .swiper-pagination-bullet {
-  background-color: hsl(212, 32%, 40%);
+  background-color: transparent;
   opacity: 1;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #DDDEE0;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--second-color);
+  background-color: #2762BF;
 }
 
 .privacy .content h6 {
@@ -1165,7 +1195,6 @@ td {
   background: #052345;
   color: #fff;
   padding: 100px 0;
-  height: 90vh;
 }
 
 #pricing h2 {
@@ -1372,8 +1401,7 @@ form button {
   }
 
   .privacy ol {
-    width: 0%;
-    visibility: hidden;
+    display: none;
   }
 
   .privacy .content {
@@ -1411,12 +1439,11 @@ form button {
   .contactus .row {
     width: 100%;
     display: flex;
-    padding: 10%;
     align-items: center;
   }
 
   .social-icons {
-    width: 60%;
+    width: 100%;
   }
 }
 
@@ -1424,13 +1451,13 @@ form button {
   position: relative;
 }
 
-#pricing .ellipse {
+#pricing .pellipse {
   position: absolute;
   top: -25px;
   left: 0;
 }
 
-#pricing .ellipse2 {
+#pricing .pellipse2 {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1444,6 +1471,53 @@ form button {
 }
 
 @media (max-width: 768.98px) {
+
+  .contact {
+    padding: 15px;
+  }
+
+  .course-d .accordion {
+    padding: unset;
+  }
+  #testimonial .d-flex {
+    flex-direction: unset !important;
+    gap: 10px !important;
+  }
+
+  #testimonial .testimonial {
+    padding: unset;
+    gap: unset;
+  }
+
+  #testimonial .img {
+    display: none;
+  }
+
+  #testimonial .col-lg-6 {
+    text-align: center !important;
+  }
+
+  #testimonial .col-lg-6 p,
+  #testimonial .col-lg-6 span {
+    display: block;
+    text-align: left !important;
+  }
+
+  #testimonial .pattern1,
+  #testimonial .pattern2 {
+    width: 68px;
+  }
+
+  #testimonial .pattern2 {
+    right: 25px;
+    bottom: -10px;
+  }
+
+  #testimonial .pattern1 {
+    left: 10px;
+    top: 75px;
+  }
+
   .ellipse1 {
     position: absolute;
     left: 40%;
@@ -1509,6 +1583,10 @@ form button {
   .d-flex {
     flex-direction: column !important;
   }
+
+    .contactus .d-flex {
+      flex-direction: unset !important;
+    }
 
   #choose .d-flex {
     flex-direction: row !important;
@@ -1592,5 +1670,62 @@ form button {
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
+  }
+
+  #pricing .patterns {
+    width: 66px;
+    position: absolute;
+    top: 220px;
+    left: 110px;
+  }
+
+  .payment-options {
+    width: 100%;
+    padding: unset;
+  }
+
+  table {
+    width: 100%;
+  }
+  .btn-container button:last-child {
+    margin-top: 10px;
+  }
+
+  
+}
+
+@media only screen and (max-width: 520px) {
+  table {
+    border: 0;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  table td {
+    border-bottom: none;
+    display: block;
+    text-align: left;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+
+  p.font-bold {
+      font-size: 20px !important;
+      font-weight: 600;
+      line-height: 33px;
+      color: #363636;
+  }
+
+  .btn {
+    width: unset !important;
   }
 }
