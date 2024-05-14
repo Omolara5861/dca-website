@@ -42,6 +42,26 @@ function selectOption(plan) {
 }
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const ideaDiv = document.getElementById('ideaDiv');
+  const ptCard = document.getElementById('ptCard');
+  const cancelBtn = document.getElementById('cancelBtn');
+
+  // Toggle visibility of ptCard when clicking ideaDiv
+  ideaDiv.addEventListener('click', function () {
+    if (ptCard.classList.contains('visible')) {
+      ptCard.classList.remove('visible');
+    } else {
+      ptCard.classList.add('visible');
+    }
+  });
+
+  // Hide ptCard when clicking cancelBtn
+  cancelBtn.addEventListener('click', function () {
+    ptCard.classList.remove('visible');
+  });
+});
+
 /*=============== SWIPER JS ===============*/
 let swiperCards = new Swiper(".card__content", {
   loop: true,
@@ -59,5 +79,6 @@ let swiperCards = new Swiper(".card__content", {
     prevEl: ".swiper-button-prev",
   }
 });
+
 
 
