@@ -309,12 +309,10 @@ nav {
 }
 
 #hero-sec {
-  background: linear-gradient(
-    180.26deg,
-    #e9f2ff 0.25%,
-    #f6f9ff 89.18%,
-    rgba(246, 249, 255, 0) 108.7%
-  );
+  background: linear-gradient(180.26deg,
+      #e9f2ff 0.25%,
+      #f6f9ff 89.18%,
+      rgba(246, 249, 255, 0) 108.7%);
 }
 
 .course-details {
@@ -460,11 +458,9 @@ nav {
   width: 100%;
   /* height: 0; */
   padding: 23px 16px;
-  background: linear-gradient(
-    6.62deg,
-    #05274c 64.99%,
-    rgba(5, 39, 76, 0) 94.46%
-  );
+  background: linear-gradient(6.62deg,
+      #05274c 64.99%,
+      rgba(5, 39, 76, 0) 94.46%);
   display: none;
   transition: all 0.5s ease-in;
 }
@@ -754,17 +750,13 @@ td {
 #hero {
   position: relative;
   height: 319px;
-  background-image: -webkit-linear-gradient(
-      bottom,
+  background-image: -webkit-linear-gradient(bottom,
       rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
+      rgba(0, 0, 0, 0.7)),
     url(./images/blod1del.png);
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
+      rgba(0, 0, 0, 0.7)),
     url(./images/blod1del.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -935,17 +927,13 @@ td {
 #hero3 {
   position: relative;
   height: 319px;
-  background-image: -webkit-linear-gradient(
-      bottom,
+  background-image: -webkit-linear-gradient(bottom,
       rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
+      rgba(0, 0, 0, 0.2)),
     url(images/Hero\ Section.png);
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
+      rgba(0, 0, 0, 0.2)),
     url(images/Hero\ Section.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -1491,9 +1479,11 @@ form button {
   right: 22px;
   z-index: 999;
 }
+
 .personality-test img {
   border-radius: unset;
 }
+
 .personality-test .pt-card {
   background: #fff;
   border: 0.56px solid #dddee0;
@@ -1515,6 +1505,7 @@ form button {
   right: -10px;
   cursor: pointer;
 }
+
 .personality-test .pt-text {
   font-size: 15px;
   font-weight: 700;
@@ -1524,21 +1515,25 @@ form button {
   background-clip: text;
   color: transparent;
 }
+
 .personality-test .pt-card .cancel {
   position: absolute;
   top: 11px;
   right: 11px;
   cursor: pointer;
 }
+
 .personality-test .pt-card .content {
   padding: 19px;
 }
+
 .personality-test .pt-card .content h6 {
   font-size: 14px;
   font-weight: 700;
   line-height: 22.5px;
   color: #1a1a1a;
 }
+
 .personality-test .pt-card .content p {
   font-size: 13px;
   font-weight: 400;
@@ -1552,14 +1547,17 @@ form button {
   right: 22px;
   z-index: 999;
 }
+
 .whatsapp button {
   background: #05a660;
   box-shadow: 0px 1px 5px 0px #0000001a;
 }
+
 .whatsapp .btn:hover {
   border-color: #05a660 !important;
   color: #05a660 !important;
 }
+
 /* MEDIA QUERIES FOR MOBILE & TABLETS */
 
 @media (max-width: 1000.98px) {
@@ -2124,6 +2122,7 @@ img {
 }
 
 @media (max-width: 768px) {
+
   .eligibility img:first-child,
   .eligibility img:last-child {
     width: 81px;
@@ -2172,4 +2171,14 @@ img {
 /* New */
 .card-header {
   border-bottom: none !important;
+}
+
+#choose .box h4 {
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  .personality-test {
+    top: 60% !important;
+  }
 }
