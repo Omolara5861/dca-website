@@ -2194,3 +2194,7 @@ a {
     top: 60% !important;
   }
 }
+
+.modal-dialog {
+  margin-top: 100px !important;
+}
