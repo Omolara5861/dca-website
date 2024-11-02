@@ -254,6 +254,16 @@ right: 80px;
 .desc {
   margin-top: 90px;
 }
+.info-section img {
+width: 150px;
+}
+.footer-info .star2 {
+top: -22%;
+width: 250px;
+}
+.register .stars {
+width: 100px;
+}
 }
 @media ( max-width: 991px ) {
   .profile-img {
@@ -286,6 +296,108 @@ main {
   font-size: 16px;
 }
 }
+
+@media ( max-width: 768px ) {
+  .header-title {
+  font-size: 24px;
+  line-height: 28.32px;
+  }
+  .webinar-title {
+  font-size: 40px;
+  line-height: 62.66px;
+  }
+ .btn {
+   width: 219px;
+   height: 32px;
+   padding: 0;
+ }
+.subtitle {
+margin-bottom: 16px;
+}
+
+h5, .speaker-title {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+ .profile-img, .calendar, .star, .desktop, .info-section ul {
+  display: none;
+ }
+
+ .speaker-text {
+  position: unset;
+  margin-top: -90px;
+ }
+
+ .desc {
+  margin-top: 32px;
+  font-size: 16px;
+  line-height: 22.4px;
+ }
+
+ .info-section h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+ }
+
+ .mobile {
+  display: block !important;
+  width: 50%;
+ }
+
+ .cont {
+  text-align: center;
+  margin-top: 40px;
+ }
+
+ .info-section img {
+ width: 100px;
+ left: -30px;
+ }
+ .footer-info .star2 {
+ top: -22%;
+ width: 90px;
+ }
+ .register .stars {
+ display: none;
+ }
+
+ .info-section ul.mob { 
+  display: block;
+ }
+ .info-section ul.mob li { 
+padding: 10px;
+border-radius: 6px 40px 3px 6px;
+ }
+ .speak, .mob {
+  display: block !important;
+ }
+
+ .footer-info .container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .footer-info .container .btn {
+ margin-top: 40px;
+ }
+
+ .mob.star2 {
+  width: unset;
+  top: 0;
+ }
+
+ button[type='submit'] {
+  height: 60px;
+ }
+
+ .register img {
+  width: 200px;
+ }
+}
      </style>
 </head>
 
@@ -295,11 +407,12 @@ main {
       <nav >
         <div class="d-flex justify-content-between">
           <a class="navbar-brand" href="index.html"><img src="/images/webinar/small-logo.svg" height="60" class="logo"/></a>
-          <img src="/images/webinar/btn.png" alt="btn"/>
+          <img src="/images/webinar/btn.png" alt="btn" class="desktop"/>
+          <img src="/images/webinar/btn.svg" alt="btn" class="mobile d-none"/>
         </div>
       </nav>
 
-      <div class="relative">
+      <div class="relative cont">
       <img src="/images/webinar/speaker.png" alt="Speaker Image" class="profile-img">
         <!-- Webinar Title and Speaker Section -->
         <div>
@@ -316,6 +429,7 @@ main {
         <!-- Speaker Info Section -->
         <div class="mt-4 ">
             <div class="relative">
+              <img src="/images/webinar/speaker-mob.png" alt="Speaker Image" class="d-none w-100 speak">
               <div class="speaker-text text-center">
                 <h5>Speaker</h5>
                 <p class="header-title">Oludare Olorunfemi</p>
@@ -346,25 +460,41 @@ main {
            <li>⮚   CV Review</li>
          </div>
         </ul>
+        <ul class="row mob d-none">
+          <div class="col-md-6">
+            <li>Bridge the gap between theory and practice</li>
+            <li>Gain valuable hands-on experience</li>
+            <li>Network with industry professionals</li>
+            <li>LinkedIn Optimisation</li>
+          </div>
+         <div class="col-md-6">
+           <li>Apply your skills to real-world projects</li>
+           <li>Receive expert mentorship</li>
+           <li>CV Review</li>
+         </div>
+        </ul>
       </div>
     </div>
 
     <!-- Footer Section -->
-    <div class="footer-info d-flex container">
-      <div class="d-flex gap-4 parent">
-        <img src="/images/webinar/clock.svg" alt="Calendar Clock Icon"  class="h-fit-content"/>
+    <div class="footer-info ">
+      <div class="container d-flex">
+        <div class="d-flex gap-4 parent">
+          <img src="/images/webinar/clock.svg" alt="Calendar Clock Icon"  class="h-fit-content"/>
+          <div>
+            <p>Friday,</p>
+            <p>7:00pm WAT</p>
+            <p>15th November, 2025</p>
+          </div>
+        </div>
         <div>
-          <p>Friday,</p>
-          <p>7:00pm WAT</p>
-          <p>15th November, 2025</p>
+          <a href="#register">
+            <button class="btn">Register Now</button>
+          </a>
         </div>
       </div>
-      <div>
-        <a href="#register">
-          <button class="btn">Register Now</button>
-        </a>
-      </div>
-      <img src="/images/webinar/star2.png" alt="Group of stars" class="star2"/>
+      <img src="/images/webinar/star2.png" alt="Group of stars" class="star2 d-none" />
+      <img src="/images/webinar/stars.svg" alt="Group of stars" class="mob star2"/>
     </div>
 
      <div id="register" class="register info-section">
