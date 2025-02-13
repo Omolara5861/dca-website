@@ -1,0 +1,238 @@
+.section-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-title span {
+    color: #2563eb;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.feature-icon {
+    font-size: 24px;
+}
+
+.feature-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.feature-description {
+    font-size: 14px;
+    color: #555;
+}
+
+.custom-image {
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+}
+
+.decorative-dots {
+    text-align: center;
+    margin-top: 10px;
+    color: #aaa;
+}
+
+/* Client Section Styling */
+#clients h2 {
+    margin: 64px 0 57px;
+    text-align: center;
+
+}
+
+.client-section {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos-wrapper {
+    display: inline-flex;
+    animation: scrollLeft 15s linear infinite;
+}
+
+.logo {
+    flex-shrink: 0;
+    display: inline-block;
+    margin: 0;
+}
+
+.logo img {
+    max-height: 100px;
+    object-fit: contain;
+    margin: 0 30px;
+}
+
+/* Keyframes for Scrolling Effect */
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.video-container {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.video-container img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+.video-container:hover {
+    transform: scale(1.05);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.play-button::before {
+    content: '▶';
+    color: white;
+    font-size: 24px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #2563eb;
+    border-radius: 30px;
+    color: #2563eb;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+  .process-section {
+      background-color: #2563eb;
+      color: white;
+      padding: 50px 30px;
+      border-radius: 12px;
+  }
+
+  .process-title {
+      font-weight: bold;
+  }
+
+  .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      border: 2px solid white;
+      color: white;
+  }
+
+  .cta-button:hover {
+      background-color: white;
+      color: #2563eb;
+  }
+
+  .process-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 15px;
+  }
+
+  .step-number {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2563eb;
+      background: #e0e7ff;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+  }
+
+  .step-title {
+      font-weight: 600;
+      font-size: 16px;
+  }
+
+  .step-description {
+      font-size: 14px;
+      color: #555;
+  }
+
+   .cta-button {
+       background-color: #2563eb;
+       color: white;
+       border: none;
+       padding: 12px 24px;
+       border-radius: 30px;
+       font-weight: bold;
+       transition: all 0.3s ease-in-out;
+   }
+
+   .cta-button:hover {
+       background-color: #1e4db7;
+   }
+
+   .subscription-box {
+       background: linear-gradient(to right, #a8c0ff, #3f5efb);
+       padding: 30px;
+       border-radius: 12px;
+       color: white;
+       text-align: center;
+   }
+
+   .form-control {
+       border-radius: 30px;
+       padding: 12px;
+   }
+
+   .subscribe-button {
+       background-color: white;
+       color: #2563eb;
+       border: none;
+       padding: 12px 24px;
+       border-radius: 30px;
+       font-weight: bold;
+       transition: all 0.3s ease-in-out;
+   }
+
+   .subscribe-button:hover {
+       background-color: #f0f0f0;
+   }
