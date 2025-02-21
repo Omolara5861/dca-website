@@ -248,5 +248,22 @@ color: #05274C;
 
   footer {
     padding-top: 150px !important;
-    position: relative;
+  }
+          .stars {
+              height: 200px;
+          }
+
+  @media (max-width: 600px) {
+    .mb-30 {
+            margin-bottom:0;
+        }
+    .stars {
+        height: 200px;
+    }
+
+          .subscription-box {
+            position: unset;
+            max-width: 100%;
+            transform: unset ;
+          }
   }
