@@ -54,10 +54,10 @@
     color: #aaa;
 }
 
-.stars {
+.deco {
     position: absolute;
     right: 0;
-    top: -20px;
+    top: -60px;
 }
 
 .py {
@@ -112,6 +112,7 @@
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 26.89px 53.78px -12.91px #0053D033;
 }
 
 .video-container img {
