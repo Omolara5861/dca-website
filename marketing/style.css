@@ -268,3 +268,14 @@ color: #05274C;
             transform: unset ;
           }
   }
+
+  #testimonial .pattern1 {
+      top: 180px;
+      border-radius: unset;
+  }
+
+  #testimonial .pattern2 {
+      right: 60px;
+      bottom: 15px;
+      border-radius: unset;
+  }
