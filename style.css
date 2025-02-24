@@ -373,47 +373,6 @@ nav {
   margin-left: -10px;
 }
 
-/* Client Section Styling */
-#clients h2 {
-  margin: 64px 0 57px;
-  text-align: center;
-
-}
-
-.client-section {
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-}
-
-.logos-wrapper {
-  display: inline-flex;
-  animation: scrollLeft 15s linear infinite;
-}
-
-.logo {
-  flex-shrink: 0;
-  display: inline-block;
-  margin: 0;
-}
-
-.logo img {
-  max-height: 100px;
-  object-fit: contain;
-  margin: 0 30px;
-}
-
-/* Keyframes for Scrolling Effect */
-@keyframes scrollLeft {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
 #courses {
   padding: 60px 0;
 }

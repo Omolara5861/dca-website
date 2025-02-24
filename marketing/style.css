@@ -73,17 +73,6 @@
     padding: 30px 0;
 }
 
-.client-section {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-}
-
-.logos-wrapper {
-    display: inline-flex;
-    animation: scrollLeft 15s linear infinite;
-}
-
 .logo {
     flex-shrink: 0;
     display: inline-block;
@@ -96,16 +85,6 @@
     margin: 0 30px;
 }
 
-/* Keyframes for Scrolling Effect */
-@keyframes scrollLeft {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
 
 .video-container {
     position: relative;
