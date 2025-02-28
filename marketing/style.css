@@ -152,8 +152,8 @@
     background: white;
     border-radius: 20px;
     padding: 34px 16px;
-        box-shadow: 0px 4px 10px 5px #00000040;
-        color: #1A2145;
+    box-shadow: 0px 4px 10px 5px #00000040;
+    color: #1A2145;
     font-size: 16px;
     line-height: 24px;
 }
@@ -234,10 +234,12 @@ input {
 footer {
     padding-top: 150px !important;
 }
-footer section{
+
+footer section {
     margin-top: 37px;
 }
-footer a img{
+
+footer a img {
     width: 35px;
     margin-right: 16px;
 }
@@ -257,9 +259,115 @@ footer a img{
     border-radius: unset;
 }
 
+.scrollable-container {
+    background: #000C20;
+    padding-top: 86px;
+    padding-left: 95px;
+    padding-right: 69px !important;
+}
 
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px dashed rgba(255, 255, 255, 0.3);
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    background-color: gray;
+    border-radius: 50%;
+    top: 0;
+}
+
+.event-card {
+    padding: 24px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #FFFFFF80;
+    gap: 15px;
+    background: #FFFFFF0D;
+    margin-bottom: 66px;
+}
+
+.event-image {
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.event-time {
+    font-weight: bold;
+    color: #d1d1d1;
+}
+
+.event-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.event-meta {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #a9a9a9;
+    font-size: 0.9rem;
+}
+
+.scrollable-container {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Scrollbar Styling */
+.scrollable-container {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* WebKit (Chrome, Safari, Edge) */
+.scrollable-container::-webkit-scrollbar {
+    width: 8px;
+    /* Scrollbar width */
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+    background: #002052;
+    /* Dark background */
+    border-radius: 10px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+    background: #002052;
+    /* Blue scrollbar */
+    border-radius: 10px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+    background: #001331;
+}
+
+/* Firefox */
+.scrollable-container {
+    scrollbar-width: 20px;
+    scrollbar-color: #013381CC #162447;
+}
 
 @media (max-width: 600px) {
+    .scrollable-container {
+        padding: 20px;
+        padding-right: unset !important;
+    }
+
+    .event-card {
+        flex-direction: column;
+    }
 
     #company .row .logo {
         margin-bottom: 20px;
@@ -288,7 +396,8 @@ footer a img{
         margin-bottom: 24px;
     }
 
-    .container, .subscription-box {
+    .container,
+    .subscription-box {
         margin: 0 10px;
     }
 }
